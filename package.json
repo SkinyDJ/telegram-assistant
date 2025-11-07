@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "telegram-agent",
+  "version": "1.0.0",
+  "description": "AI Telegram assistant for managing Twitter tasks",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}
