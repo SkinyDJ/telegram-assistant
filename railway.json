@@ -1,0 +1,12 @@
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install"
+  },
+  "deploy": {
+    "startCommand": "node start.js"
+  },
+  "variables": {
+    "NODE_ENV": "production"
+  }
+}
