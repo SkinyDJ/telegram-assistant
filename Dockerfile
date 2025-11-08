@@ -1,20 +1,20 @@
-# Використовуємо офіційний образ Node.js
-FROM node:18
+# Використовуємо стабільний Node.js 18
+FROM node:18-alpine
 
 # Створюємо робочу директорію
 WORKDIR /app
 
-# Копіюємо файли package.json і package-lock.json (якщо є)
+# Копіюємо package.json і package-lock.json
 COPY package*.json ./
 
-# Встановлюємо залежності
-RUN npm install
+# Встановлюємо тільки production-залежності
+RUN npm install --production
 
-# Копіюємо весь код
+# Копіюємо решту коду
 COPY . .
 
-# Виставляємо змінну середовища
+# Виставляємо змінні середовища
 ENV NODE_ENV=production
 
-# Запускаємо бот
+# Запускаємо бота
 CMD ["node", "start.js"]
