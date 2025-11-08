@@ -1,14 +1,25 @@
 {
-  "type": "module",
-  "name": "telegram-agent",
+  "name": "telegram-assistant",
   "version": "1.0.0",
-  "description": "AI Telegram assistant for managing Twitter tasks",
+  "description": "AI Telegram Assistant for Twitter automation",
   "main": "start.js",
   "scripts": {
     "start": "node start.js"
   },
+  "keywords": [
+    "telegram",
+    "bot",
+    "assistant",
+    "twitter",
+    "automation"
+  ],
+  "author": "SkinyDJ",
+  "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",
     "node-telegram-bot-api": "^0.66.0"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
